@@ -7,12 +7,6 @@ resolve_link() {
 commitab
 
 
-  while [ -n "$path" ]; do
-    cd "${path%/*}"
-    local name="${path##*/}"
-    path="$(resolve_link "$name" || true)"
-  done
-
   pwd
   cd "$cwd"
 }
