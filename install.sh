@@ -4,7 +4,7 @@ set -e
 resolve_link() {
   $(type -p greadlink readlink | head -1) "$1"
 }
-commita
+commitab
 abs_dirname() {
   local cwd="$(pwd)"
   local path="$1"
